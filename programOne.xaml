@@ -1,0 +1,21 @@
+﻿<Window x:Class="comboBox.programOne"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:comboBox"
+        mc:Ignorable="d"
+        Title="Bank Charges per Month" Height="450" Width="800">
+    <Canvas HorizontalAlignment="Center" Width="800" Height="434" VerticalAlignment="Top">
+        <Label Content="Bank charges program" Canvas.Left="201" Canvas.Top="10" FontSize="36" FontWeight="Bold"/>
+        <TextBlock Canvas.Left="219" TextWrapping="Wrap" Canvas.Top="93" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"><Run Text="Use this program to calculate your bank charges per month. "/><LineBreak/><Run Text="Enter the required data and hit calculate"/></TextBlock>
+        <TextBox x:Name="endingBalanceInput" Canvas.Left="101" TextWrapping="Wrap" Text="Balance" Canvas.Top="208" Width="151" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionOpacity="0.8"/>
+        <TextBox x:Name="numberChecksInput" Canvas.Left="101" TextWrapping="Wrap" Text="Number of checks" Canvas.Top="293" Width="151" HorizontalAlignment="Center" VerticalAlignment="Center" Height="31" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionOpacity="0.8"/>
+        <Button x:Name="runProgram" Content="Calculate" Canvas.Left="138" Canvas.Top="350" Height="24" Width="76" Click="runProgram_Click"/>
+        <Label Content="Enter your ending balance for the month:" Canvas.Left="69" Canvas.Top="177" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Enter the numbers of checks written:" Canvas.Left="62" Canvas.Top="257" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="166" Canvas.Left="357" Canvas.Top="177" Width="396" HorizontalAlignment="Left" VerticalAlignment="Center" Fill="#FFE3F9E1"/>
+        <Label Content="Charges for this month:" Canvas.Left="488" Canvas.Top="204" Background="#FFCBCBCB"/>
+        <Label x:Name="resultOutput" Content="" Canvas.Left="440" Canvas.Top="241" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"/>
+    </Canvas>
+</Window>
