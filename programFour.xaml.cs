@@ -36,12 +36,5 @@ namespace comboBox
             letterOutput.Content = ts.GetLetterGrade();
         }
 
-
-        //DSA, Array, ArrayList, LinkedLink, Time and Space (No Sorting probably in final) 
-        //3 coding: 1 array, LinkedList, Stack   15
-
-        // Collections - HT - Binary Tree - Observer - Review - Graphs - Decorator / MVC
-
-        //Tip for interview: Hastable 2, binary tree 4 , array, OOp MAIN, sorting, LinkedList (#1)
     }
 }
